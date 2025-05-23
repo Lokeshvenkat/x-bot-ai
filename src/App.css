@@ -1,0 +1,272 @@
+/* === Base Reset === */
+body,
+html {
+  font-family: "Ubuntu";
+  width: 100vw;
+  height: 100vh;
+  margin: 0px;
+  background-color: #1a1a1a;
+  color: #e0e0e0;
+}
+
+/* === Layout: Chat Box === */
+.chat-box {
+  display: flex;
+  height: 100vh;
+}
+
+/* === Sidebar / Drawer === */
+.drawer {
+  width: 208px;
+  height: 100vh;
+  background-color: #2a2a2a;
+}
+
+.drawer-header {
+  width: 208px;
+  height: 47px;
+  background: linear-gradient(0deg, #2a2a2a, #2a2a2a);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.drawer-header span {
+  font-size: 20px;
+  font-weight: 400;
+  color: #ffffff;
+}
+
+.new-chat-button {
+  width: 24px;
+  height: 24px;
+}
+
+/* === Past Conversation Button === */
+.past-convo-button {
+  width: 175.16px;
+  height: 39px;
+  border-radius: 10px;
+  background: #2a2a2a;
+  font-size: 16px;
+  font-weight: 700;
+  color: #f0f0f0;
+  border: none;
+  margin: 11px;
+}
+
+/* === Chat Content Area === */
+.chat-box .content {
+  width: 100vw;
+  padding: 14px;
+  flex: 1;
+  background: linear-gradient(180deg, #1a1a1a 0%, #2a2a2a 100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* === Responsive Chat Content Width === */
+@media (max-width: 1228px) {
+  .chat-box .content {
+    width: 60vw;
+  }
+}
+@media (max-width: 695px) {
+  .chat-box .content {
+    width: 40vw;
+  }
+}
+@media (max-width: 544px) {
+  .chat-box .content {
+    width: 20vw;
+  }
+}
+@media (max-width: 532px) {
+  .chat-box .content {
+    width: 5vw;
+  }
+}
+
+/* === Header: Chat AI Title === */
+.bot-ai {
+  font-size: 28px;
+  font-weight: 700;
+  margin: 0px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #ffffff;
+}
+
+.bot-ai span {
+  margin-left: 20px;
+  color: #b6a7d8;
+}
+
+/* === Message Area === */
+.message-area {
+  flex: 1;
+  margin-bottom: 47px;
+}
+
+/* === Initial Question Section === */
+.initial-questions {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* === Welcome Section === */
+.welcome-section {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.welcome-section p {
+  font-size: 28px;
+  font-weight: 500;
+  margin: 0px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.welcome-section img {
+  width: 65.3px;
+  height: 69px;
+}
+
+/* === Suggested Questions Grid === */
+.questions {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 14px;
+  row-gap: 32px;
+  margin-bottom: 14px;
+}
+
+.question-button {
+  border-radius: 5px;
+  background: #2a2a2a;
+  padding: 16px;
+  box-shadow: 0px 4px 10px 0px #00000026;
+  cursor: pointer;
+  border: none;
+}
+
+.question-button p {
+  margin: 0px;
+  color: #e0e0e0;
+}
+
+.question-button p:first-child {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.question-button p:last-child {
+  font-family: "Open Sans";
+  font-size: 16px;
+  font-weight: 400;
+  color: #c0c0c0;
+}
+
+/* === Input Area === */
+.input-area {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.input-area input {
+  width: 846.09px;
+  height: 41px;
+  border-radius: 5px;
+  border: 1px solid #444;
+  background-color: #2a2a2a;
+  color: #ffffff;
+  flex: 1;
+}
+
+.input-area button {
+  width: 73.82px;
+  height: 41px;
+  border-radius: 5px;
+  background: #3a3a3a;
+  font-size: 20px;
+  font-weight: 400;
+  color: #ffffff;
+  border: none;
+}
+
+/* === Message Display Area === */
+.messages {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  margin-top: 20px;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+@media (max-width: 670px) {
+  .messages {
+    height: 70vh;
+  }
+}
+
+/* === Individual Message Bubble === */
+.message-bubble {
+  width: 90%;
+  height: fit-content;
+  border-radius: 20px;
+  background: #2a2a2a;
+  box-shadow: -4px 4px 15px 0px #0000001a;
+  padding: 16px 20px;
+  display: flex;
+  gap: 20px;
+}
+
+.message-bubble-text {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  color: #e0e0e0;
+}
+
+.message-bubble-text p {
+  margin: 0px;
+}
+
+.message-bubble-text img {
+  width: 65.3px;
+  height: 69px;
+}
+
+.message-bubble-text .name {
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 7px;
+}
+
+.message-bubble-text .info {
+  font-family: "Open Sans";
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.message-bubble-text .time {
+  font-family: "Open Sans";
+  font-size: 12px;
+  font-weight: 400;
+  color: #cccccc9e;
+}

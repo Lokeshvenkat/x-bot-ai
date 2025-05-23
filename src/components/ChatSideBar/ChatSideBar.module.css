@@ -1,0 +1,38 @@
+/* Styles for the sidebar drawer container */
+.drawer {
+    width: 280px;
+    padding: 10px;
+  }
+  
+  /* Header section with logo and new chat button */
+  .drawerHeader {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 10px;
+  }
+  
+  /* Logo image styling */
+  .logoImg {
+    width: 40px;
+    height: 40px;
+  }
+  
+  /* Styling for new chat button image */
+  .newChatButton {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+  }
+  
+  /* Past conversations button styling */
+  .pastConvoButton {
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  

@@ -1,0 +1,8 @@
+/* ThumbsRating.module.css */
+
+.thumbsContainer {
+    transition: opacity 0.3s ease;
+    display: flex;
+    gap: 4px;
+  }
+  

@@ -1,0 +1,67 @@
+/* InitialQuestions.module.css */
+
+.initialQuestions {
+    padding: 20px;
+  }
+  
+  .welcomeSection {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .welcomeSection p {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 8px;
+  }
+  
+  .questionsGrid {
+    display: grid;
+    gap: 14px;
+  }
+  
+  .questionsFlex {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .questionButton {
+    border: none;
+    padding: 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    text-align: left;
+    background: #f0f0f0; /* default light background */
+    color: black;
+    transition: background-color 0.3s ease;
+  }
+  
+  .questionButton:hover {
+    background-color: #ddd;
+  }
+  
+  .questionButtonDark {
+    background: #3a2261;
+    color: white;
+  }
+  
+  .questionText {
+    font-size: 16px;
+    margin: 0;
+  }
+  
+  .questionTextSmall {
+    font-size: 10px;
+    margin: 0;
+    color: #8e78b0;
+  }
+  
+  .questionTextDarkSmall {
+    color: #8e78b0;
+  }
+  
+  .questionTextDark {
+    color: white;
+  }
+  

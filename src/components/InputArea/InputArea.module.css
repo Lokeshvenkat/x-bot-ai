@@ -1,0 +1,41 @@
+/* InputArea.module.css */
+
+.inputArea {
+    display: flex;
+    gap: 10px;
+    padding: 12px;
+  }
+  
+  .inputField {
+    flex-grow: 1;
+    padding: 8px 12px;
+    font-size: 16px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    background: white;
+    color: black;
+    transition: border-color 0.3s ease, background-color 0.3s ease;
+  }
+  
+  .inputFieldDark {
+    background: #240b4a;
+    border: 2px solid magenta;
+    color: white;
+  }
+  
+  .button {
+    padding: 8px 16px;
+    font-size: 16px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    background: #f0f0f0;
+    color: black;
+    transition: background-color 0.3s ease;
+  }
+  
+  .buttonDark {
+    background: magenta;
+    color: white;
+  }
+  
