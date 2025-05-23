@@ -1,0 +1,12 @@
+{
+    "Test Case 1: Bot AI Application - Should have an input field to ask questions and return a response": "TEST_STATUS_SUCCESS",
+    "Test Case 2: Bot AI Application - Should show a default message if the question is not present in the static JSON data": "TEST_STATUS_SUCCESS",
+    "Test Case 3: Bot AI Application - Should show valid message if the question is present in the static JSON data": "TEST_STATUS_SUCCESS",
+    "Test Case 4: Bot AI Application - Should have a Past Conversations page which lists all the previous messages": "TEST_STATUS_SUCCESS",
+    "Test Case 5: Bot AI Application - Past Conversations should be persistent across page refreshes using localStorage": "TEST_STATUS_SUCCESS",
+    "Test Case 6: Bot AI Application - Should have a New Chat button to start a new conversation": "TEST_STATUS_SUCCESS",
+    "Test Case 7: Bot AI Application Behaviour - should navigate to the Past Conversations page on button click": "TEST_STATUS_SUCCESS",
+    "Test Case 8: Bot AI Application Behaviour - should display the Bot AI header with correct title": "TEST_STATUS_SUCCESS",
+    "Test Case 9: Bot AI Application Behaviour - should allow user to type a message in the input field": "TEST_STATUS_SUCCESS",
+    "Test Case 10: Bot AI Application Behaviour - should handle form submission": "TEST_STATUS_SUCCESS"
+}
